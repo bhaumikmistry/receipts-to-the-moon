@@ -7,7 +7,7 @@ body {
   width: 300px;
   height: 300px;
   margin: 100px auto;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #23d5ab);
   background-size: 400% 400%;
   -webkit-animation: daylight 15s ease infinite;
           animation: daylight 15s ease infinite;
@@ -25,11 +25,107 @@ body {
   z-index: 2;
   width: 120px;
   height: 120px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fecf4e), color-stop(50%, #a62a44), to(#310441));
-  background: linear-gradient(to bottom, #fecf4e 1%, #a62a44 50%, #310441 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #003380), color-stop(50%, #003d99), to(#005ce6));
+  background: linear-gradient(to bottom, #003380 1%, #003d99 50%, #005ce6 100%);
   border-radius: 50%;
   -webkit-transform: rotate(-15deg) translate(-35%, -55%);
           transform: rotate(-15deg) translate(-35%, -55%);
+}
+
+.land_one {
+  position: absolute;
+  top: 37%;
+  left: 33%;
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  -webkit-clip-path: polygon(13.33% 40%, 20% 51.55%, 17.13% 41.52%, 19.1% 39.31%, 23.07% 55.89%, 37.93% 67.69%, 30.9% 55.85%, 31.38% 49.32%, 33.63% 43.46%, 40.35% 41.13%, 46.51% 43.37%, 53.99% 43.28%, 56.53% 55.64%, 57.2% 48.02%, 64.36% 39.66%, 64.75% 31.48%, 68.34% 24.8%, 73.72% 21.43%, 72.29% 15.26%, 76.64% 12.52%, 82.14% 14.65%, 81.13% 10.51%, 71.13% 9.16%, 69.52% 4.21%, 64.3% 2.71%, 59.28% 9.01%, 46.38% 7.76%, 52.12% 2.53%, 39.79% 3.52%, 33.03% 1.61%, 22.65% 3.26%, 10.06% 2.48%, 3.56% 11.29%, 17.51% 12.9%, 18.67% 25.31%);
+  clip-path: polygon(13.33% 40%, 20% 51.55%, 17.13% 41.52%, 19.1% 39.31%, 23.07% 55.89%, 37.93% 67.69%, 30.9% 55.85%, 31.38% 49.32%, 33.63% 43.46%, 40.35% 41.13%, 46.51% 43.37%, 53.99% 43.28%, 56.53% 55.64%, 57.2% 48.02%, 64.36% 39.66%, 64.75% 31.48%, 68.34% 24.8%, 73.72% 21.43%, 72.29% 15.26%, 76.64% 12.52%, 82.14% 14.65%, 81.13% 10.51%, 71.13% 9.16%, 69.52% 4.21%, 64.3% 2.71%, 59.28% 9.01%, 46.38% 7.76%, 52.12% 2.53%, 39.79% 3.52%, 33.03% 1.61%, 22.65% 3.26%, 10.06% 2.48%, 3.56% 11.29%, 17.51% 12.9%, 18.67% 25.31%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #803300), color-stop(50%, #b34700), to(#cc5200));
+  background: linear-gradient(to bottom, #803300 1%, #b34700 50%, #cc5200 100%);
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-transform: skew(-20deg, 10deg);
+          transform: skew(-20deg, 10deg);
+}
+
+.land_two {
+  position: absolute;
+  top: 52%;
+  left: 40%;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  -webkit-clip-path: polygon(27.53% 21.6%, 20.87% 24.17%, 15.4% 29.95%, 15.23% 35.92%, 16.55% 41.51%, 19.47% 46.29%, 29.25% 52.44%, 30.63% 60.79%, 32.43% 68.73%, 28.02% 78.47%, 24.02% 86.61%, 22.52% 90.68%, 22.42% 93.54%, 25.62% 92.7%, 30.21% 90.66%, 39.41% 86.58%, 54.41% 77.5%, 63.51% 67.56%, 69.36% 62.09%, 72.38% 57.55%, 74.1% 51.49%, 75.01% 44.82%, 75.31% 36.94%, 74.2% 29.46%, 71.5% 22.68%, 67.35% 20.38%, 59.68% 13.94%, 50.74% 16.02%, 42.6% 14.49%, 33.33% 19.89%, 30.8% 17.95%, 29.87% 15.4%, 29.48% 11.73%, 30.7% 7.45%, 27.72% 11.18%, 23.93% 13.11%, 18.1% 12.41%, 11.47% 9.91%, 20.8% 15.75%, 26.47% 15.68%, 28.3% 18.64%);
+  clip-path: polygon(27.53% 21.6%, 20.87% 24.17%, 15.4% 29.95%, 15.23% 35.92%, 16.55% 41.51%, 19.47% 46.29%, 29.25% 52.44%, 30.63% 60.79%, 32.43% 68.73%, 28.02% 78.47%, 24.02% 86.61%, 22.52% 90.68%, 22.42% 93.54%, 25.62% 92.7%, 30.21% 90.66%, 39.41% 86.58%, 54.41% 77.5%, 63.51% 67.56%, 69.36% 62.09%, 72.38% 57.55%, 74.1% 51.49%, 75.01% 44.82%, 75.31% 36.94%, 74.2% 29.46%, 71.5% 22.68%, 67.35% 20.38%, 59.68% 13.94%, 50.74% 16.02%, 42.6% 14.49%, 33.33% 19.89%, 30.8% 17.95%, 29.87% 15.4%, 29.48% 11.73%, 30.7% 7.45%, 27.72% 11.18%, 23.93% 13.11%, 18.1% 12.41%, 11.47% 9.91%, 20.8% 15.75%, 26.47% 15.68%, 28.3% 18.64%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #803300), color-stop(50%, #b34700), to(#cc5200));
+  background: linear-gradient(to bottom, #803300 1%, #b34700 50%, #cc5200 100%);
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-transform: skew(10deg, 0deg);
+          transform: skew(10deg, 0deg);
+}
+
+.cloud-mini {
+  position: absolute;
+  z-index: 2;
+  background: white;
+  opacity: .2;
+}
+
+.cloud-mini-1 {
+  position: absolute;
+  top: 37%;
+  left: 38%;
+  z-index: 2;
+  width: 60px;
+  height: 20px;
+  border-radius: 40%/100%;
+  opacity: .3;
+}
+
+.cloud-mini-2 {
+  position: absolute;
+  top: 44%;
+  left: 55%;
+  z-index: 2;
+  width: 30px;
+  height: 10px;
+  border-radius: 40%/100%;
+  opacity: .3;
+}
+
+.cloud-mini-3 {
+  position: absolute;
+  top: 47%;
+  left: 52%;
+  z-index: 2;
+  width: 10px;
+  height: 5px;
+  border-radius: 40%/100%;
+  opacity: .3;
+}
+
+.cloud-mini-4 {
+  position: absolute;
+  top: 56%;
+  left: 37%;
+  z-index: 2;
+  width: 40px;
+  height: 10px;
+  border-radius: 40%/100%;
+  opacity: .3;
+}
+
+.cloud-mini-5 {
+  position: absolute;
+  top: 58%;
+  left: 47%;
+  z-index: 2;
+  width: 45px;
+  height: 15px;
+  border-radius: 40%/100%;
+  opacity: .3;
 }
 
 @supports not ((-webkit-clip-path: inset(50% 0 0 0)) or (clip-path: inset(50% 0 0 0))) {
