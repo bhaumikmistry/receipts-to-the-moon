@@ -2,11 +2,34 @@ body {
   background: #fafaf0;
 }
 
+.heading {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  margin: 10px auto;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: daylight 50s 5s ease infinite;
+          animation: daylight 50s 5s ease infinite;
+  border-radius: 10%;
+  border: 1px solid white;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), inset 0 0 0 15px rgba(0, 0, 0, 0.05), inset 0 0 0 30px rgba(0, 0, 0, 0.05), inset 0 0 0 45px rgba(0, 0, 0, 0.05), inset 0 0 0 60px rgba(0, 0, 0, 0.05), inset 0 0 0 75px rgba(0, 0, 0, 0.05), inset 0 0 0 90px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), inset 0 0 0 15px rgba(0, 0, 0, 0.05), inset 0 0 0 30px rgba(0, 0, 0, 0.05), inset 0 0 0 45px rgba(0, 0, 0, 0.05), inset 0 0 0 60px rgba(0, 0, 0, 0.05), inset 0 0 0 75px rgba(0, 0, 0, 0.05), inset 0 0 0 90px rgba(0, 0, 0, 0.05);
+}
+
+.heading-text {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin: auto auto;
+}
+
 .container {
   position: relative;
   width: 300px;
   height: 300px;
-  margin: 100px auto;
+  margin: 50px auto;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #23d5ab);
   background-size: 400% 400%;
   -webkit-animation: daylight 15s ease infinite;
