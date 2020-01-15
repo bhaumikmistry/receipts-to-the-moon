@@ -64,6 +64,29 @@ body {
           transform: rotate(15deg);
   -webkit-transform: skew(10deg, 0deg);
           transform: skew(10deg, 0deg);
+  -webkit-box-shadow: 30px 30px 30px white;
+          box-shadow: 30px 30px 30px white;
+}
+
+.receipt {
+  position: absolute;
+  top: 20%;
+  left: 37%;
+  z-index: 2;
+  width: 160px;
+  height: 120px;
+  font-size: 4px;
+  line-height: 80%;
+  -webkit-clip-path: polygon(21.73% 69%, 24.13% 69.42%, 24.83% 63.02%, 26.53% 56.43%, 28.52% 52.06%, 30.9% 47.72%, 33.14% 43.95%, 38.02% 38%, 42.97% 33.31%, 48.07% 28.52%, 54.28% 24.34%, 61.48% 21.19%, 67.1% 20.09%, 73.53% 20.69%, 78.4% 22.49%, 78.13% 20.69%, 72.47% 18.8%, 66.73% 17.51%, 60.13% 17.25%, 53.13% 18.99%, 46.13% 21.08%, 40.13% 24.45%, 34.92% 28.79%, 29.7% 35.08%, 26.47% 42.46%, 23.2% 51.61%, 22.67% 57.51%, 22.2% 63.45%);
+  clip-path: polygon(21.73% 69%, 24.13% 69.42%, 24.83% 63.02%, 26.53% 56.43%, 28.52% 52.06%, 30.9% 47.72%, 33.14% 43.95%, 38.02% 38%, 42.97% 33.31%, 48.07% 28.52%, 54.28% 24.34%, 61.48% 21.19%, 67.1% 20.09%, 73.53% 20.69%, 78.4% 22.49%, 78.13% 20.69%, 72.47% 18.8%, 66.73% 17.51%, 60.13% 17.25%, 53.13% 18.99%, 46.13% 21.08%, 40.13% 24.45%, 34.92% 28.79%, 29.7% 35.08%, 26.47% 42.46%, 23.2% 51.61%, 22.67% 57.51%, 22.2% 63.45%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #b3b3b3), color-stop(50%, #e6e6e6), to(#b3b3b3));
+  background: linear-gradient(to bottom, #b3b3b3 1%, #e6e6e6 50%, #b3b3b3 100%);
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-transform: skew(10deg, 0deg);
+          transform: skew(10deg, 0deg);
+  -webkit-box-shadow: 30px 30px 30px white;
+          box-shadow: 30px 30px 30px white;
 }
 
 .cloud-mini {
@@ -82,6 +105,8 @@ body {
   height: 20px;
   border-radius: 40%/100%;
   opacity: .3;
+  -webkit-animation: cloud-moving 10s 0s linear infinite;
+          animation: cloud-moving 10s 0s linear infinite;
 }
 
 .cloud-mini-2 {
@@ -93,6 +118,8 @@ body {
   height: 10px;
   border-radius: 40%/100%;
   opacity: .3;
+  -webkit-animation: cloud-moving 15s 0s linear infinite;
+          animation: cloud-moving 15s 0s linear infinite;
 }
 
 .cloud-mini-3 {
@@ -104,6 +131,8 @@ body {
   height: 5px;
   border-radius: 40%/100%;
   opacity: .3;
+  -webkit-animation: cloud-moving 14s 0s linear infinite;
+          animation: cloud-moving 14s 0s linear infinite;
 }
 
 .cloud-mini-4 {
@@ -115,6 +144,8 @@ body {
   height: 10px;
   border-radius: 40%/100%;
   opacity: .3;
+  -webkit-animation: cloud-moving 18s 0s linear infinite;
+          animation: cloud-moving 18s 0s linear infinite;
 }
 
 .cloud-mini-5 {
@@ -126,6 +157,8 @@ body {
   height: 15px;
   border-radius: 40%/100%;
   opacity: .3;
+  -webkit-animation: cloud-moving 16s 0s linear infinite;
+          animation: cloud-moving 16s 0s linear infinite;
 }
 
 @supports not ((-webkit-clip-path: inset(50% 0 0 0)) or (clip-path: inset(50% 0 0 0))) {
@@ -181,11 +214,47 @@ body {
   z-index: 4;
   width: 35px;
   height: 35px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #70a27d), color-stop(50%, #4552a1), to(#371a6a));
-  background: linear-gradient(to bottom, #70a27d 1%, #4552a1 50%, #371a6a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #e6e6e6), color-stop(50%, #b3b3b3), to(#8c8c8c));
+  background: linear-gradient(to bottom, #e6e6e6 1%, #b3b3b3 50%, #8c8c8c 100%);
   border-radius: 50%;
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
+}
+
+.sub-planet-spot {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #e6e6e6), color-stop(50%, #b3b3b3), to(#8c8c8c));
+  background: linear-gradient(to bottom, #e6e6e6 1%, #b3b3b3 50%, #8c8c8c 100%);
+  border-radius: 50%;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.spot-1 {
+  opacity: 0.4;
+  top: 25%;
+  left: 77%;
+  z-index: 4;
+  width: 10px;
+  height: 10px;
+}
+
+.spot-2 {
+  opacity: 0.4;
+  top: 27%;
+  left: 81%;
+  z-index: 4;
+  width: 10px;
+  height: 10px;
+}
+
+.spot-3 {
+  opacity: 0.6;
+  top: 29%;
+  left: 76%;
+  z-index: 4;
+  width: 7px;
+  height: 7px;
 }
 
 .orbit {
@@ -519,6 +588,36 @@ body {
   }
   to {
     left: calc(100% + 100px);
+  }
+}
+
+@-webkit-keyframes cloud-moving {
+  0% {
+    -webkit-transform: translate(5px, 0px) rotate(0deg);
+            transform: translate(5px, 0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-5px, 0px) rotate(0deg);
+            transform: translate(-5px, 0px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(5px, 0px) rotate(0deg);
+            transform: translate(5px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes cloud-moving {
+  0% {
+    -webkit-transform: translate(5px, 0px) rotate(0deg);
+            transform: translate(5px, 0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-5px, 0px) rotate(0deg);
+            transform: translate(-5px, 0px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(5px, 0px) rotate(0deg);
+            transform: translate(5px, 0px) rotate(0deg);
   }
 }
 /*# sourceMappingURL=style.css.map */
