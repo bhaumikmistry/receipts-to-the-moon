@@ -7,7 +7,7 @@ body {
   width: 300px;
   height: 30px;
   margin: 10px auto;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #235bd5);
   background-size: 400% 400%;
   -webkit-animation: daylight 50s 5s ease infinite;
           animation: daylight 50s 5s ease infinite;
@@ -30,7 +30,7 @@ body {
   width: 300px;
   height: 300px;
   margin: 50px auto;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #235bd5);
   background-size: 400% 400%;
   -webkit-animation: daylight 15s ease infinite;
           animation: daylight 15s ease infinite;
@@ -102,8 +102,8 @@ body {
   line-height: 80%;
   -webkit-clip-path: polygon(21.73% 69%, 24.13% 69.42%, 24.83% 63.02%, 26.53% 56.43%, 28.52% 52.06%, 30.9% 47.72%, 33.14% 43.95%, 38.02% 38%, 42.97% 33.31%, 48.07% 28.52%, 54.28% 24.34%, 61.48% 21.19%, 67.1% 20.09%, 73.53% 20.69%, 78.4% 22.49%, 78.13% 20.69%, 72.47% 18.8%, 66.73% 17.51%, 60.13% 17.25%, 53.13% 18.99%, 46.13% 21.08%, 40.13% 24.45%, 34.92% 28.79%, 29.7% 35.08%, 26.47% 42.46%, 23.2% 51.61%, 22.67% 57.51%, 22.2% 63.45%);
   clip-path: polygon(21.73% 69%, 24.13% 69.42%, 24.83% 63.02%, 26.53% 56.43%, 28.52% 52.06%, 30.9% 47.72%, 33.14% 43.95%, 38.02% 38%, 42.97% 33.31%, 48.07% 28.52%, 54.28% 24.34%, 61.48% 21.19%, 67.1% 20.09%, 73.53% 20.69%, 78.4% 22.49%, 78.13% 20.69%, 72.47% 18.8%, 66.73% 17.51%, 60.13% 17.25%, 53.13% 18.99%, 46.13% 21.08%, 40.13% 24.45%, 34.92% 28.79%, 29.7% 35.08%, 26.47% 42.46%, 23.2% 51.61%, 22.67% 57.51%, 22.2% 63.45%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #b3b3b3), color-stop(50%, #e6e6e6), to(#b3b3b3));
-  background: linear-gradient(to bottom, #b3b3b3 1%, #e6e6e6 50%, #b3b3b3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #8c8c8c), color-stop(50%, #e6e6e6), to(#8c8c8c));
+  background: linear-gradient(to bottom, #8c8c8c 1%, #e6e6e6 50%, #8c8c8c 100%);
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
   -webkit-transform: skew(10deg, 0deg);
@@ -642,5 +642,66 @@ body {
     -webkit-transform: translate(5px, 0px) rotate(0deg);
             transform: translate(5px, 0px) rotate(0deg);
   }
+}
+
+.row-top {
+  margin-top: 10x auto;
+}
+
+.row {
+  position: relative;
+  width: 450px;
+  height: 30px;
+  margin: -1px auto;
+  background: linear-gradient(-45deg, #ffffff, #b3ffff, #ffdd99, #99e699);
+  background-size: 400% 400%;
+  -webkit-animation: daylight 50s 0s ease infinite;
+          animation: daylight 50s 0s ease infinite;
+  border: 1px solid white;
+  overflow: hidden;
+  font-style: normal;
+}
+
+.row-name {
+  padding-left: 10px;
+  padding-top: 7px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  position: relative;
+  float: left;
+  width: 190px;
+  height: 100%;
+  font-size: 15px;
+  border: 1px solid white;
+}
+
+.row-number {
+  text-align: center;
+}
+
+.row-size {
+  padding-left: 10px;
+  padding-top: 7px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  position: relative;
+  float: left;
+  height: 100%;
+  font-size: 15px;
+  border: 1px solid white;
+  width: 90px;
+}
+
+.row-count {
+  padding-left: 10px;
+  padding-top: 7px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  position: relative;
+  float: left;
+  height: 100%;
+  font-size: 15px;
+  border: 1px solid white;
+  width: 134px;
 }
 /*# sourceMappingURL=style.css.map */

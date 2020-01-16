@@ -24,7 +24,13 @@ $blue-dark: #371a6a;
 $bg-light: #ee7752;
 $bg-semi: #e73c7e;
 $bg-middle: #23d5ab;
-$bg-dark: #23d5ab;
+$bg-dark: #235bd5;
+
+$bk-light: #ffffff;
+$bk-semi: #b3ffff;
+$bk-middle: #ffdd99;
+$bk-dark: #99e699;
+
 
 body {
   background: #fafaf0;
@@ -132,7 +138,7 @@ body {
   line-height: 80%;
   -webkit-clip-path: polygon(21.73% 69.00%,24.13% 69.42%,24.83% 63.02%,26.53% 56.43%,28.52% 52.06%,30.90% 47.72%,33.14% 43.95%,38.02% 38.00%,42.97% 33.31%,48.07% 28.52%,54.28% 24.34%,61.48% 21.19%,67.10% 20.09%,73.53% 20.69%,78.40% 22.49%,78.13% 20.69%,72.47% 18.80%,66.73% 17.51%,60.13% 17.25%,53.13% 18.99%,46.13% 21.08%,40.13% 24.45%,34.92% 28.79%,29.70% 35.08%,26.47% 42.46%,23.20% 51.61%,22.67% 57.51%,22.20% 63.45%);
   clip-path: polygon(21.73% 69.00%,24.13% 69.42%,24.83% 63.02%,26.53% 56.43%,28.52% 52.06%,30.90% 47.72%,33.14% 43.95%,38.02% 38.00%,42.97% 33.31%,48.07% 28.52%,54.28% 24.34%,61.48% 21.19%,67.10% 20.09%,73.53% 20.69%,78.40% 22.49%,78.13% 20.69%,72.47% 18.80%,66.73% 17.51%,60.13% 17.25%,53.13% 18.99%,46.13% 21.08%,40.13% 24.45%,34.92% 28.79%,29.70% 35.08%,26.47% 42.46%,23.20% 51.61%,22.67% 57.51%,22.20% 63.45%);
-  background: linear-gradient(to bottom, $moon-mid 1%, $moon-light 50%, $moon-mid 100%);
+  background: linear-gradient(to bottom, $moon-dark 1%, $moon-light 50%, $moon-dark 100%);
   transform: rotate(15deg);
   transform: skew(10deg,0deg);
   box-shadow: 30px 30px 30px white;
@@ -430,3 +436,73 @@ body {
   50% { transform: translate(-5px, 0px) rotate(0deg); }
   100% { transform: translate(5px, 0px) rotate(0deg); }
 }
+
+.row-top {
+  margin-top: 10x auto;
+}
+
+.row {
+  position: relative;
+  width: 450px;
+  height: 30px;
+  margin: -1px auto;
+  background: linear-gradient(-45deg, $bk-light, $bk-semi, $bk-middle, $bk-dark);
+  background-size: 400% 400%;
+  animation: daylight 50s 0s ease infinite;
+  border: 1px solid white;
+  overflow: hidden;
+  font-style: normal;
+  
+  // box-shadow: 0 0 20px rgba(black, .3),
+  //             inset 0 0 0 15px rgba(black, .05),
+  //             inset 0 0 0 30px rgba(black, .05),
+  //             inset 0 0 0 45px rgba(black, .05),
+  //             inset 0 0 0 60px rgba(black, .05),
+  //             inset 0 0 0 75px rgba(black, .05),
+  //             inset 0 0 0 90px rgba(black, .05);
+}
+
+.row-name {
+  padding-left: 10px;
+  padding-top: 7px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  position: relative;
+  float: left;
+  width: 190px;
+  height: 100%;
+  font-size: 15px;
+  border: 1px solid white;
+
+}
+
+.row-number {
+  text-align: center;
+}
+
+.row-size {
+  padding-left: 10px;
+  padding-top: 7px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  position: relative;
+  float: left;
+  height: 100%;
+  font-size: 15px;
+  border: 1px solid white;
+  width: 90px;
+}
+
+.row-count {
+  padding-left: 10px;
+  padding-top: 7px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  position: relative;
+  float: left;
+  height: 100%;
+  font-size: 15px;
+  border: 1px solid white;
+  width: 134px;
+}
+
