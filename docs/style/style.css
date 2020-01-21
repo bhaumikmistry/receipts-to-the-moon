@@ -4,14 +4,16 @@ body {
 
 .heading {
   position: relative;
-  width: 300px;
-  height: 30px;
+  width: 70%;
+  min-width: 350px;
+  height: 60px;
+  padding-top: 30px;
   margin: 10px auto;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23d5ab, #235bd5);
   background-size: 400% 400%;
   -webkit-animation: daylight 50s 5s ease infinite;
           animation: daylight 50s 5s ease infinite;
-  border-radius: 10%;
+  border-radius: 0%;
   border: 1px solid white;
   overflow: hidden;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), inset 0 0 0 15px rgba(0, 0, 0, 0.05), inset 0 0 0 30px rgba(0, 0, 0, 0.05), inset 0 0 0 45px rgba(0, 0, 0, 0.05), inset 0 0 0 60px rgba(0, 0, 0, 0.05), inset 0 0 0 75px rgba(0, 0, 0, 0.05), inset 0 0 0 90px rgba(0, 0, 0, 0.05);
@@ -650,29 +652,33 @@ body {
 
 .row {
   position: relative;
-  width: 450px;
+  width: 40%;
+  min-width: 450px;
   height: 30px;
   margin: -1px auto;
   background: linear-gradient(-45deg, #ffffff, #b3ffff, #ffdd99, #99e699);
   background-size: 400% 400%;
   -webkit-animation: daylight 50s 0s ease infinite;
           animation: daylight 50s 0s ease infinite;
-  border: 1px solid white;
   overflow: hidden;
   font-style: normal;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .row-name {
   padding-left: 10px;
   padding-top: 7px;
+  padding-right: 2%;
   margin-top: 0px;
   margin-bottom: 2px;
   position: relative;
   float: left;
-  width: 190px;
+  width: 37%;
+  min-width: 180px;
   height: 100%;
   font-size: 15px;
-  border: 1px solid white;
+  text-align: right;
 }
 
 .row-number {
@@ -688,8 +694,10 @@ body {
   float: left;
   height: 100%;
   font-size: 15px;
-  border: 1px solid white;
-  width: 90px;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  width: 19%;
+  min-width: 90px;
+  text-align: center;
 }
 
 .row-count {
@@ -701,7 +709,9 @@ body {
   float: left;
   height: 100%;
   font-size: 15px;
-  border: 1px solid white;
-  width: 134px;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  width: 29%;
+  min-width: 134px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
