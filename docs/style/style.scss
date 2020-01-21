@@ -514,8 +514,32 @@ body {
   text-align: center;
 }
 
+.footer{
+  position: relative;
+  width: 40%;
+  min-width: 350px;
+  height: 30px;
+  padding: 10px;
+  margin: 30px auto;
+  background-size: 400% 400%;
+  animation: daylight 50s 5s ease infinite;
+  border-radius: 0%;
+
+  overflow: hidden;
+}
+
+.footer-item{
+  position:relative;
+  width:33%;
+  text-align: center;
+  margin: auto auto;
+  float: left;
+  text-decoration: none;
+}
+
 @media only screen and (max-device-width: 480px) {
   .container{
     display:none;
   }
 }
+
