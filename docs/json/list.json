@@ -2,20 +2,8 @@
     "moon": 1260000000,
     "List": [
         {
-            "name":"brand",
-            "size":"1"
-        },
-        {
-            "name":"brand",
-            "size":"1"
-        },
-        {
-            "name":"brand",
-            "size":"1"
-        },
-                {
-            "name":"brand",
-            "size":"1"
+            "name":"CVS",
+            "size":"7.5"
         }
     ]
 }
