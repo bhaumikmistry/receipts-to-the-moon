@@ -2,7 +2,6 @@
 window.onload = function() {
     var link = 'https://bhaumikmistry.github.io/receipts-to-the-moon/json/list.json'
     $.getJSON(link, function( data ) {
-        console.log(data);  
         var arr=Object.entries(data); // this turns data into an array arr
         display_list(arr);
     });    
@@ -10,19 +9,10 @@ window.onload = function() {
 
 function display_list(data)
 {
-    console.log(data[0]);
     var list = data[1][1];
-    console.log(list);
-
     var moon_distance = data[0][1]
-    console.log(moon_distance)
-
-    // <h1 class="row-name"> CVS </h1>
-    // <h1 class="row-size row-number"> 3' </h1>
-    // <h1 class="row-count row-number"> 420,000,000 </h1>
 
     for (index = 0; index < list.length; index++) { 
-        console.log(list[index].name); 
 
         var div = document.createElement("div");
         div.classList.add("row")
@@ -40,9 +30,7 @@ function display_list(data)
 
         var counts_to_the_moon =  moon_distance / (list[index].size);
         counts_to_the_moon = counts_to_the_moon/1000000;
-        console.log(counts_to_the_moon)
         var text_count_to_the_moon = counts_to_the_moon + " Mil";
-        console.log(text_count_to_the_moon)
         
         var div_count = document.createElement("h1");
         div_count.classList.add("row-count");
@@ -56,7 +44,5 @@ function display_list(data)
         
         var holder = document.getElementById("Holder");
         holder.appendChild(div)
-
     } 
-
 }
