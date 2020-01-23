@@ -1,6 +1,6 @@
 
 window.onload = function() {
-    var link = 'https://bhaumikmistry.github.io/receipts-to-the-moon/json/list.json'
+    var link = 'https://raw.githubusercontent.com/bhaumikmistry/receipts-to-the-moon/master/docs/json/list.json'
     $.getJSON(link, function( data ) {
         var arr=Object.entries(data); // this turns data into an array arr
         display_list(arr);
@@ -9,8 +9,10 @@ window.onload = function() {
 
 function display_list(data)
 {
+    console.log(data)
     var list = data[1][1];
     var moon_distance = data[0][1]
+    console.log(list)
 
     for (index = 0; index < list.length; index++) { 
 
