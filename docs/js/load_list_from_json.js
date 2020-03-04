@@ -11,6 +11,7 @@ window.onload = function() {
 function display_list(data)
 {
     console.log(data)
+    var list = data[1][1];
     var moon_distance = data[0][1]
     console.log(list)
 
