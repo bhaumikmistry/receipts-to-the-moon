@@ -1,3 +1,4 @@
+console.log("Version 0.33")
 
 window.onload = function() {
     var link = 'https://raw.githubusercontent.com/bhaumikmistry/receipts-to-the-moon/master/docs/json/list.json'
@@ -10,7 +11,6 @@ window.onload = function() {
 function display_list(data)
 {
     console.log(data)
-    var list = data[1][1];
     var moon_distance = data[0][1]
     console.log(list)
 
