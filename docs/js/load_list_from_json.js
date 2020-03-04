@@ -1,3 +1,4 @@
+console.log("Version 0.33")
 
 window.onload = function() {
     var link = 'https://raw.githubusercontent.com/bhaumikmistry/receipts-to-the-moon/master/docs/json/list.json'
