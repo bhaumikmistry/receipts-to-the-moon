@@ -1,1 +1,3 @@
-console.log("Version 0.33")
+var version = "0.0.33"
+var bump = "0"
+console.log("Version " + version)
